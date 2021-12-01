@@ -1,0 +1,17 @@
+/* Reference: https://tourkick.com/?p=14005 */
+html, body {
+ scroll-snap-type: y proximity;
+}
+@media (max-width: 1024px) {
+ html, body {
+ scroll-padding: 64px; /* Remove this if your mobile header nav hides upon scroll. */
+ }
+}
+@media (min-width: 1025px) {
+ html, body {
+ scroll-padding: 80px; /* If your desktop header nav is fixed. */
+ }
+}
+.scroll-snap { /* Add this class to your container's block settings. */
+ scroll-snap-align: start;
+}
